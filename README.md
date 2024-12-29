@@ -94,5 +94,5 @@ Refer to the official documentation for Keywords and Locators:
 
 1. To run the test, use the following command:
    ```bash
-   robot --outputdir Results Tests/LoginPage.robot
+   robot --outputdir Results Tests/LoginPageTest.robot
    ```
