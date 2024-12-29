@@ -1,84 +1,98 @@
-# robot_poc
+# Robot Framework POC
 
+## Prerequisites
 
-Open Command Line as an Administrator
+### 1. Install Python
+- Open Command Line as an Administrator.
+- Download Python from the official website:  
+  [Python Downloads](https://www.python.org/downloads/)
+- Ensure `python.exe` is added to the **PATH** environment variable.
 
-install python from below link
-https://www.python.org/downloads/
+### 2. Verify Python Installation
+- Check Python version:
+  ```bash
+  python -V
+  ```
+- Check if `python3` is properly installed:
+  ```bash
+  python3 -V
+  ```
 
-add python.exe to PATH env variable
+### 3. Verify pip Installation
+- Check pip version:
+  ```bash
+  pip --version
+  ```
+- Check pip3 version:
+  ```bash
+  pip3 --version
+  ```
 
-check python version by using following 
-python -V
+---
 
-check python3 is properly installed
-python3 -V
+## Install Robot Framework
 
-check pip version by using following 
-pip --version
+1. Install Robot Framework using pip:
+   ```bash
+   pip3 install robotframework
+   ```
+2. Verify the installation:
+   ```bash
+   robot --version
+   # OR
+   python -m robot --version
+   ```
 
-check pip version by using following 
-pip3 --version
+---
 
-install robot framework using following 
+## Install Selenium Library
 
-pip3 install robotframework
+1. Install the Selenium Library for Robot Framework:
+   ```bash
+   pip3 install robotframework-seleniumlibrary
+   ```
+2. Verify the installation:
+   ```bash
+   pip list | grep robotframework-seleniumlibrary
+   ```
 
-check if installation is proper using following
+---
 
-robot --version or python -m robot --version
+## Install PyCharm IDE
 
-install selenium library using following 
+1. Download and install PyCharm:  
+   [PyCharm Downloads](https://www.jetbrains.com/pycharm/)
+2. Add the following plugin in PyCharm:
+   - **IntelliBot @ SeleniumLibrary Patched**
 
-pip3 install robotframework-seleniumlibrary
+---
 
-check if installation is properly complete using following
+## Download Web Drivers
 
-pip list | grep robotframework-seleniumlibrary
+1. Download Chrome and Firefox drivers:  
+   - [ChromeDriver](https://developer.chrome.com/docs/chromedriver/#latest_chromedriver_binaries)  
+   - [GeckoDriver](https://github.com/mozilla/geckodriver/releases)  
+   - Other drivers can be downloaded from the [Selenium Downloads Page](https://www.selenium.dev/downloads/).
+2. Extract the drivers and place them in a folder like:
+   ```
+   C:/browser drivers/
+       ├── chromedriver.exe
+       └── geckodriver.exe
+   ```
+3. Add the driver folder to your **PATH** environment variable.
 
-download and install PyCharm from the following link 
+---
 
-https://www.jetbrains.com/pycharm/
+## Selenium Library Documentation
 
-Once downloaded, add the following Plugin in the IDE
+Refer to the official documentation:  
+[SeleniumLibrary Documentation](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 
-IntelliBot @ SeleniumLibrary Patched
+---
 
-download chrome driver and firefox driver from following links / other drivers can be downloaded from selenium https://www.selenium.dev/downloads/
+## Test Execution
 
-https://developer.chrome.com/docs/chromedriver/#latest_chromedriver_binaries
-
-https://github.com/mozilla/geckodriver/releases
-
-Extract both files and put the drivers in a folder like following :
-
-- c:/browser drivers/
-                    - chromedriver.exe
-                    - geckodriver.exe
-
-add above folder into your PATH environment variable
-
-Refer to the below link for Selenium Library dowumentation
-
-https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
-
-
-#Test Execution
-
-To run the test, use the following command
-
-robot --outputdir Results Tests/LoginPage.robot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. To run the test, use the following command:
+   ```bash
+   robot --outputdir Results Tests/LoginPage.robot
+   ```
