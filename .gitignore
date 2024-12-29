@@ -2,7 +2,7 @@
 /shelf/
 /.idea/workspace.xml
 
-.idea
-.venv
+.idea/
+.venv/
 .gitignore
 
