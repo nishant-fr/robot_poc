@@ -85,7 +85,7 @@
 
 ## Selenium Library Documentation
 
-Refer to the official documentation:  
+Refer to the official documentation for Keywords and Locators:  
 [SeleniumLibrary Documentation](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 
 ---
