@@ -1,10 +1,13 @@
+*** Settings ***
+Library    SeleniumLibrary
+
 *** Variables ***
-# Group common parts of the XPath for input fields
+
 ${inputFieldXPath}  xpath://span[text()='%s']//..//..//..//input
 ${dropdownXPath}    xpath://div[@role='combobox' and @aria-labelledby='%s']
 ${submitButtonXPath}  xpath://div[contains(@class,'MuiBox-root')]//button[@type='submit' and text()='Register']
 
-# Fields with dynamic parts in their XPaths
+
 ${firstNameElement}           xpath://span[text()='First Name']//..//..//..//input
 ${lastNameElement}            xpath://span[text()='Last Name']//..//..//..//input
 ${phoneElement}               xpath://span[text()='Phone']//..//..//..//input

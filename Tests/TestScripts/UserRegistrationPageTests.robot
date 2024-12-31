@@ -17,7 +17,7 @@ Successful registration with valid data
     ${ssnNo}        FakerLibrary.Ssn
     ${bloodType}    Set Variable    O+
     ${sex}          Set Variable  Male
-    ${dob}          Set Variable  06/06/2001
+    ${dob}          Set Variable  '06/06/2001'
     ${physicianFirstName}    FakerLibrary.First Name
     ${physicianLastName}     FakerLibrary.Last Name
     ${physicianTitle}        Set Variable  Dr.
@@ -26,7 +26,7 @@ Successful registration with valid data
     ${emailId}      FakerLibrary.Email
     ${password}     FakerLibrary.Password
 
-    Log    ${bloodType}  # Log the value of blood type
+    Log    ${bloodType}
     LoginPage.Click Register Button
     Enter First Name               ${firstName}
     Enter Last Name                ${lastName}

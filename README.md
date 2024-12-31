@@ -81,6 +81,7 @@ pip install robotframework-faker
    [PyCharm Downloads](https://www.jetbrains.com/pycharm/)
 2. Add the following plugin in PyCharm:
    - **IntelliBot @ SeleniumLibrary Patched**
+   - **Robot Framework Language Server**
 
 ---
 
