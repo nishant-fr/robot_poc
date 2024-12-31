@@ -90,11 +90,27 @@ Refer to the official documentation for Keywords and Locators:
 
 ---
 
+## Project Folder Structure
+
+The project folder structure should be organized as follows:
+
+```
+Resources 
+├── Pages (Page Object Models) 
+│ ├── LoginPage.robot (Page Object for Login Page) 
+│ ├── ResetPasswordPage.robot (Page Object for Reset Password Page) 
+│ └── Hooks.robot (Handles browser setup and teardown) 
+├── Tests 
+│ └── TestScripts (Test scripts for automation) 
+│       ├── LoginPageTest.robot (Test script for Login Page) 
+│       └── ResetPasswordPageTest.robot (Test script for Reset Password Page)
+```
+
 ## Test Execution
 
 1. To run the test, use the following command:
    ```bash
-   robot --outputdir Results -v Tests/TestScripts/LoginPageTest.robot
+   robot --outputdir Results -v Tests
    ```
 # Allure Report Integration
 
@@ -143,7 +159,7 @@ This will output the installed version of Allure.
 To run your tests and generate Allure reports, use the following command:
 
 ```bash
-robot --listener allure_robotframework --outputdir Results Tests/TestScripts/LoginPageTest.robot
+robot --listener allure_robotframework --outputdir Results Tests
 ```
 
 ## Step 7: Generate the Allure Report
