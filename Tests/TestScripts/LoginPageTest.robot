@@ -3,6 +3,7 @@ Resource  ../../Resources/Hooks.robot
 Resource  ../../Resources/Hooks.robot
 Resource  ../../Resources/Pages/LoginPage.robot
 Resource  ../../Resources/Pages/RegisteredUserPage.robot
+Resource  ../../Resources/Pages/ResetPasswordPage.robot
 
 Test Setup  Hooks.Start Browser
 Test Teardown  Hooks.End Browser

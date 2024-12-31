@@ -13,9 +13,9 @@ ${LoginButton}  xpath://button[@type='submit' and text()='Login']
 ${RegisterButton}  xpath://div[contains(@class,'MuiBox-root')]//button[@type='button' and text()='Register']
 ${ForgotPasswordButton}  xpath://a[text()='Forgot Password?']
 ${AlertMessageElement}  xpath://div[contains(@class,'MuiAlert-message')]
-${RegisterPageHeader}  //h1[text()='Register']
-${ForgotPasswordPageHeader}  //h1[text()='Reset Password']
-
+${RegisterPageHeader}  xpath://h1[text()='Register']
+${ForgotPasswordPageHeader}  xpath://h1[text()='Reset Password']
+${login_header}  //h4[text()='Login']
 
 *** Keywords ***
 
@@ -48,3 +48,7 @@ Click Forgot Password Button
 Is Forgot Password Page Visible
     Wait Until Element Is Visible  ${ForgotPasswordPageHeader}
     Element Should Be Visible  ${ForgotPasswordPageHeader}
+
+Is Login Page Visible
+    Wait Until Element Is Visible  ${login_header}
+    Element Should Be Visible  ${login_header}
