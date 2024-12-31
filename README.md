@@ -45,6 +45,23 @@
 
 ---
 
+## Install Robot Framework Faker Library
+
+1. Install Robot Framework Faker Library using pip:
+   ```bash
+   pip install robotframework-faker
+   pip install setuptools    
+   ```
+2. Verify the installation:
+   ```bash
+   pip show robotframework-faker
+
+   ```
+
+---
+
+pip install robotframework-faker
+
 ## Install Selenium Library
 
 1. Install the Selenium Library for Robot Framework:
