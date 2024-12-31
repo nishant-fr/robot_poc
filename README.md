@@ -96,3 +96,76 @@ Refer to the official documentation for Keywords and Locators:
    ```bash
    robot --outputdir Results -v Tests/TestScripts/LoginPageTest.robot
    ```
+# Allure Report Integration
+
+To integrate Allure for reporting in your Robot Framework tests, follow the steps below:
+
+## Step 1: Download Allure
+
+1. Download the Allure release ZIP folder from the official [Allure Framework GitHub](https://github.com/allure-framework/allure2/releases).
+2. Extract the ZIP folder to a directory of your choice.
+3. Add the `bin` directory to your system's `PATH` environment variable to make the Allure commands accessible globally.
+
+## Step 2: Install Allure Robot Framework Adapter
+
+To install the Allure Robot Framework adapter, run the following command:
+
+```bash
+pip install allure-robotframework
+```
+
+## Step 3: Verify Installation
+
+You can verify that the Allure Robot Framework adapter is installed correctly by running:
+
+```bash
+pip show allure-robotframework
+```
+
+This will show the package details if the installation is successful.
+
+## Step 4: Restart IDE
+
+After installation, restart your IDE to ensure that the changes are applied.
+
+## Step 5: Verify Allure Installation
+
+To verify that Allure is properly installed, run the following command:
+
+```bash
+allure --version
+```
+
+This will output the installed version of Allure.
+
+## Step 6: Run Tests with Allure Listener
+
+To run your tests and generate Allure reports, use the following command:
+
+```bash
+robot --listener allure_robotframework --outputdir Results Tests/TestScripts/LoginPageTest.robot
+```
+
+## Step 7: Generate the Allure Report
+
+After running the tests, generate the Allure report with the following command:
+
+```bash
+allure generate output/allure
+```
+
+## Step 8: Open the Allure Report
+
+Finally, to view the generated report, use:
+
+```bash
+allure open
+```
+
+---
+
+
+
+
+
+
