@@ -1,6 +1,8 @@
 *** Settings ***
 Resource  ../../Resources/Hooks.robot
 Resource  ../../Resources/LoginPageFeature.robot
+Resource  ../../Resources/Hooks.robot
+Resource  ../../Resources/LoginPageFeature.robot
 *** Variables ***
 
 *** Test Cases ***
